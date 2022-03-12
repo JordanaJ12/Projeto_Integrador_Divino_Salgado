@@ -3,6 +3,9 @@ Aplicação Web que tem como objetivo diminuir a fila de espera nas compras de s
 
 ##Nomes dos Integrantes 👨‍💻 👩‍💻 :
 ###- Gustavo Francisco de Sousa Matos;
+
 ###- Jordana Jesus da Conceição;
+
 ###- Kleber Utrilha Branco;
+
 ###- Lucas Alves de Brito.
