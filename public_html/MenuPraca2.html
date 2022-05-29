@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> <html lang="br"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Divino Salgado</title>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/flaticon.css" />
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Bootsnav -->
+        <link rel="stylesheet" href="css/bootsnav.css">
+        <!-- Color style -->
+        <link rel="stylesheet" href="css/color.css">
+
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" href="css/MenuPraca2.css" />
+        <link rel="stylesheet" href="css/MenuPraca2.css" type="text/css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
+
+        <!-- TELA DE CARREGAMENTO --> 
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                    <div class="object" id="object_five"></div>
+                    <div class="object" id="object_six"></div>
+                    <div class="object" id="object_seven"></div>
+                    <div class="object" id="object_eight"></div>
+                    <div class="object" id="object_big"></div>
+                </div>
+            </div>
+        </div>
+        <!-- FINAL DA TELA DE CARREGAMENTO -->
+
+        <!-- BARRA SUPERIOR PRETA -->
+        <nav class="navbar navbar-default bootsnav no-background navbar-fixed black">
+            <div class="container">  
+        </nav>
+
+        <!-- Header -->
+        <header id="hello">
+            <!-- Container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="banner">  
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Container end -->
+
+        </header><!-- Header end -->
+
+        <!-- MANTEM AS SEÇÕES CENTRALIZADAS (NAO MEXER)  -->
+        <section id="block">
+            <div class="container">
+
+                <!-- ITENS CARDAPIO -->
+                <div class="row forth_sec">
+
+                    <div class="background-cardapio">
+
+                        <div class="menu-praca2">
+                            <div class ="forma"><h2>MENU - PRAÇA 2</h2>
+
+                                <h3>SALGADOS</h3>
+                            </div>
+                            <div class="bordaItem1">
+
+                                <div class="item1"> 
+                                    <h2>Coxinha</h2>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd1">
+                                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Coxinha', document.getElementById('qtd1').value, '5.00', 1)"> Adicionar </button>                                    
+                                    <img src="images/coxinha-menu2.jpeg" alt="Coxinha">
+                                </div>
+                            </div>
+
+                            <div class="bordaItem2">
+
+                                <div class="item2"> 
+                                    <h2>Hamburgão</h2>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd2">
+                                    <button type="button" id="adicionar2" id="produto2" onclick="AddCarrinho('Hamburgão', document.getElementById('qtd2').value, '5.00', 2)"> Adicionar </button>                                    
+                                    <img src="images/hamburgao-menu1.jpg" alt="Hamburgão">
+                                </div>
+
+                            </div>
+
+                            <div class="bordaItem3">
+
+                                <div class="item3"> 
+                                    <h2>Risole de </h2>
+                                    <p>Pres/Queijo</p>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd3">
+                                    <button type="button" id="adicionar3" id="produto3" onclick="AddCarrinho('Risole de Presunto e Queijo', document.getElementById('qtd3').value, '5.00', 3)"> Adicionar </button>                                    
+                                    <img src="images/risole-menu2.jpg" alt="Risole de Presunto e Queijo">
+                                </div>
+
+                            </div>
+
+                            <div class="bordaItem4">
+
+                                <div class="item4"> 
+                                    <h2>Pão de Queijo</h2>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd4">
+                                    <button type="button" id="adicionar4" id="produto4" onclick="AddCarrinho('Pão de Queijo', document.getElementById('qtd4').value, '5.00', 4)"> Adicionar </button>                                    
+                                    <img src="images/paoDeQueijo-menu2.jpeg" alt="Pão de Queijo">
+                                </div>
+
+                            </div>
+
+                            <div class="bordaItem5">
+
+                                <div class="item5"> 
+                                    <h2>Croissant</h2>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd5">
+                                    <button type="button" id="adicionar5" id="produto5" onclick="AddCarrinho('Croissant', document.getElementById('qtd5').value, '5.00', 5)"> Adicionar </button>                                    
+                                    <img src="images/croissant-menu2.jpeg" alt="Croissant de Presunto e Queijo">
+                                </div>
+
+                            </div>
+
+                            <div class="bordaItem6">
+
+                                <div class="item6"> 
+                                    <h2>Kibe</h2>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd6">
+                                    <button type="button" id="adicionar6" id="produto6" onclick="AddCarrinho('Kibe', document.getElementById('qtd6').value, '5.00', 6)"> Adicionar </button>                                    
+                                    <img src="images/kibe-menu2.jpeg" alt="Kibe">
+                                </div>
+
+                            </div>
+
+                            <div class ="forma"><h3>BEBIDAS</h3></div>
+
+
+                            <div class="bordaItem7">
+
+                                <div class="item7"> 
+                                    <h2>Café C/ Leite</h2>
+                                    <h3>R$ 3,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd7">
+                                    <button type="button" id="adicionar7" id="produto7" onclick="AddCarrinho('Café com Leite', document.getElementById('qtd2').value, '3.00', 2)"> Adicionar </button>                                    
+                                    <img src="images/cafe-menu2.jpeg" alt="Café Com Leite">
+                                </div>
+
+                            </div>
+
+                            <div class="bordaItem8">
+
+                                <div class="item8"> 
+                                    <h2>Refrigerante</h2>
+                                    <p>em Lata</p>
+                                    <h3>R$ 5,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd8">
+                                    <button type="button" id="adicionar8" id="produto8" onclick="AddCarrinho('Refrigerante em Lata', document.getElementById('qtd8').value, '5.00', 8)"> Adicionar </button>
+                                    <img src="images/refrigerante-menu1.png" alt="Refrigerante em Lata">
+                                </div>
+                            </div>
+
+                            <div class="bordaItem9">
+
+                                <div class="item9"> 
+                                    <h2>Suco</h2>
+                                    <p>Del Valle</p>
+                                    <h3>R$ 6,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd9">
+                                    <button type="button" id="adicionar9" id="produto9" onclick="AddCarrinho('Suco Del Valle', document.getElementById('qtd9').value, '6.00', 9)"> Adicionar </button>
+                                    <img src="images/sucoDellVale-menu2.jpg" alt="Suco Del Valle">
+                                </div>
+                            </div>
+
+                            <div class="bordaItem10">
+
+                                <div class="item10"> 
+                                    <h2>Água</h2>
+                                    <p>Mineral</p>
+                                    <h3>R$ 3,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd10">
+                                    <button type="button" id="adicionar10" id="produto10" onclick="AddCarrinho('Água Mineral', document.getElementById('qtd10').value, '3.00', 10)"> Adicionar </button>
+                                    <img src="images/agua-menu2.jpg" alt="Água Mineral">
+                                </div>
+                            </div>
+
+                            <div class ="forma"><h3>SOBREMESAS</h3></div>
+
+                            <div class="bordaItem11">
+
+                                <div class="item11"> 
+                                    <h2>Pão</h2>
+                                    <p>De Mel</p>
+                                    <h3>R$ 8,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd11">
+                                    <button type="button" id="adicionar11" id="produto11" onclick="AddCarrinho('Pão de Mel', document.getElementById('qtd11').value, '8.00', 11)"> Adicionar </button>
+                                    <img src="images/paoDeMel-menu2.jpeg" alt="Pão de Mel">
+                                </div>
+                            </div>
+
+                            <div class="bordaItem12">
+
+                                <div class="item12"> 
+                                    <h2>Bolo de</h2>
+                                    <p>Cenoura C/ Choc</p>
+                                    <h3>R$ 10,00</h3>
+                                    <input type="number" value="1" min="1" max="10" id="qtd12">
+                                    <button type="button" id="adicionar12" id="produto12" onclick="AddCarrinho('Bolo de Cenoura com Chocolate', document.getElementById('qtd12').value, '10.00', 12)"> Adicionar </button>
+                                    <img src="images/boloDeCenoura-menu2.jpg" alt="Bolo de Cenoura com Chocolate">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sacola"> 
+
+                        <img src="images/avanco-rapidoE.png" alt="Seta 1" id="seta1">
+                        <img src="images/avanco-rapidoE.png" alt="Seta 2" id="seta2">
+                        <img src="images/avanco-rapidoE.png" alt="Seta 3" id="seta3">
+
+                        <ul id="sacola">
+                            <li><a href="CarrinhoDeCompras.html"> Ver Sacola de Compras </a></li>                      
+
+                            <img src="images/avanco-rapidoD.png" alt="Seta 4" id="seta4">
+                            <img src="images/avanco-rapidoD.png" alt="Seta 5" id="seta5">
+                            <img src="images/avanco-rapidoD.png" alt="Seta 6" id="seta6">
+                        </ul>
+                    </div>
+                </div>
+                <!-- FINAL DOS 4 BOTOES -->
+
+        </section><!-- FINAL DO CENTRALIZAR DO SITE -->
+
+
+        <!-- RODAPÉ -->
+        <footer>
+
+            <div id="rodape">
+
+                <img src="img/Rodape.png" alt="">
+
+            </div>
+            <!-- Container -->
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+                        <div class="subscribe">
+                            <h4>Inscreva-se</h4>
+                            <p>Para receber novidades e promoções, digite o seu email!</p>
+
+                            <form role="form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="em" placeholder="Escreva o seu email aqui">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn send_btn">
+                                                <i class="glyphicon glyphicon-send"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+                        <div class="contact_us">
+                            <h4>Contate-nos</h4>
+                            <a href="">divinosalgado@senacsp.com</a>
+
+                            <address>
+                                Av. Engenheiro Stevaux<br />
+                                823 - Jurubatuba <br />
+                                Santo Amaro / SP <br />
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12 pull-right">
+                        <div class="basic_info">
+                            <a href=""><img class="footer_logo" src="images/logo rodape copiar.png" alt="Burger" /></a>
+
+                            <ul class="list-inline social">
+                                <li><a href="" class="fa fa-facebook"></a></li>
+                                <li><a href="" class="fa fa-twitter"></a></li>
+                                <li><a href="" class="fa fa-instagram"></a></li>
+                            </ul>
+
+                            <div class="footer-copyright">
+                                <p class="wow fadeInRight" data-wow-duration="1s">
+                                    Desenvolvido pelo TADS/2022. 
+                                    <i class="fa fa-heart"></i>
+
+                                </p>
+                            </div>					
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- Container end -->
+        </footer><!-- Footer end -->
+
+
+        <!-- scroll up-->
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div><!-- End off scroll up->
+        
+        <!-- JavaScript -->
+        <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>		
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Bootsnav js -->
+        <script src="js/bootsnav.js"></script>
+
+
+
+        <script>
+                                        function AddCarrinho(produto, qtd, valor, posicao)
+                                        {
+                                            localStorage.setItem("produto" + posicao, produto);
+                                            localStorage.setItem("qtd" + posicao, qtd);
+                                            valor = valor * qtd;
+                                            localStorage.setItem("valor" + posicao, valor);
+                                            alert("Produto adicionado ao carrinho!");
+                                        }
+        </script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>	
+</html>	
+
