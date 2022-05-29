@@ -1,0 +1,1751 @@
+@import url(https://fonts.googleapis.com/css?family=Maitree:400,700);
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);
+
+/* General styles */
+body {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Maitree', serif;
+    color: #fff;
+    background: #efe9dd;
+    width: 100%;
+}
+/*TELA DE CARREGAMENTO*/
+
+#loading{
+    background-color: #d14149;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 0px;
+    top: 0px;
+    left:0;
+    z-index: 9999;
+}
+#loading-center{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 999;
+}
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 9999;
+
+}
+.object{
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+}
+.object:nth-child(2n+0) {
+    margin-right: 0px;
+
+}
+#object_one {
+    -webkit-animation: object_one 2s infinite;
+    animation: object_one 2s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+#object_two {
+    -webkit-animation: object_two 2s infinite;
+    animation: object_two 2s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+#object_three {
+    -webkit-animation: object_three 2s infinite;
+    animation: object_three 2s infinite;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+#object_four {
+    -webkit-animation: object_four 2s infinite;
+    animation: object_four 2s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#object_five {
+    -webkit-animation: object_five 2s infinite;
+    animation: object_five 2s infinite;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+#object_six {
+    -webkit-animation: object_six 2s infinite;
+    animation: object_six 2s infinite;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+#object_seven {
+    -webkit-animation: object_seven 2s infinite;
+    animation: object_seven 2s infinite;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+#object_eight {
+    -webkit-animation: object_eight 2s infinite;
+    animation: object_eight 2s infinite;
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+#object_big{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    top: 50px;
+    -webkit-animation: object_big 2s infinite;
+    animation: object_big 2s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+
+@-webkit-keyframes object_big {
+    50% {
+        -webkit-transform: scale(0.5);
+    }
+
+}
+
+@keyframes object_big {
+    50% {
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+
+}
+
+@-webkit-keyframes object_one {
+    50% {
+        -webkit-transform: translate(-65px,-65px)  ;
+    }
+
+}
+
+@keyframes object_one {
+    50% {
+        transform: translate(-65px,-65px) ;
+        -webkit-transform: translate(-65px,-65px) ;
+    }
+
+}
+
+
+@-webkit-keyframes object_two {
+    50% {
+        -webkit-transform: translate(0,-65px) ;
+    }
+}
+
+@keyframes object_two {
+    50% {
+        transform: translate(0,-65px) ;
+        -webkit-transform: translate(0,-65px) ;
+    }
+
+}
+
+@-webkit-keyframes object_three {
+    50% {
+        -webkit-transform: translate(65px,-65px) ;
+    }
+}
+
+@keyframes object_three {
+    50% {
+        transform: translate(65px,-65px) ;
+        -webkit-transform: translate(65px,-65px) ;
+    }
+}
+
+@-webkit-keyframes object_four {
+
+    50% {
+        -webkit-transform: translate(65px,0) ;
+    }
+
+}
+
+@keyframes object_four {
+    50% {
+        transform: translate(65px,0) ;
+        -webkit-transform: translate(65px,0) ;
+    }
+
+}
+
+@-webkit-keyframes object_five {
+
+    50% {
+        -webkit-transform: translate(65px,65px) ;
+    }
+
+}
+
+@keyframes object_five {
+    50% {
+        transform: translate(65px,65px) ;
+        -webkit-transform: translate(65px,65px) ;
+    }
+
+}
+
+@-webkit-keyframes object_six {
+
+    50% {
+        -webkit-transform: translate(0,65px) ;
+    }
+
+}
+
+@keyframes object_six {
+    50% {
+        transform:  translate(0,65px) ;
+        -webkit-transform:  translate(0,65px) ;
+    }
+
+}
+
+@-webkit-keyframes object_seven {
+
+    50% {
+        -webkit-transform: translate(-65px,65px) ;
+    }
+
+}
+
+@keyframes object_seven {
+    50% {
+        transform: translate(-65px,65px) ;
+        -webkit-transform: translate(-65px,65px) ;
+    }
+
+}
+
+@-webkit-keyframes object_eight {
+
+    50% {
+        -webkit-transform: translate(-65px,0) ;
+    }
+
+}
+
+@keyframes object_eight {
+    50% {
+        transform: translate(-65px,0) ;
+        -webkit-transform: translate(-65px,0) ;
+    }
+
+}
+
+/*FINAL DA TELA DE CARREGAMENTO*/
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+}
+h1{
+    font-size: 70px;
+}
+h2 {
+    font-size: 36px;
+    letter-spacing:1px;
+}
+h3 {
+    font-size: 24px;
+}
+img {
+    width: 100%;
+}
+a,button{
+    outline: 0 !important;
+}
+a:hover,a:focus{
+    text-decoration: none
+}
+
+/* CABEÇALHO */
+
+.html {
+    width: 100%;
+}
+
+.div {
+
+    clear: both;
+    margin: 0 auto;
+    width: 775px;
+
+}
+header{
+    background: url(../images/back-madeira.png) /* FOTO INICIAL DO SITE */
+        no-repeat;
+    background-size: 100% 100%; /* 1º LARGURA DA IMAGEM / 2º ALTURA */
+}
+
+nav.navbar.bootsnav {
+    background-color: #000; /* COR DA BARRA SUPERIOR DO SITE */
+    border: 0 none;
+
+}
+
+.attr-nav {
+    margin-right: 40px; /* POSIÇÃO DO BOTAO DO MENU LATERAL */
+
+}
+.side-menu .fa { /* COR E TAMANHO DO BOTAO SUPERIOR DO MENU  */
+    color: #fff;
+    font-size: 28px;
+}
+
+.side .widget ul.link li a:hover,.side .widget ul.link li a:focus {
+    color:#D1B980;
+}
+
+ul.link li {
+    margin: 15px 0%; /* ESPAÇO ENTRE OS ITENS DA LISTA (1º TAMANHO DO PARAGRAFO, 2º ALINHAMENTO COM O MENU ) */
+}
+
+/* Banner - NÃO MEXER */
+
+.banner { /* BACKGROUD DO CABEÇALHO */
+    margin-top: 300px;
+}
+
+.background-cardapio {
+    padding: 10px 8px 25px;
+    width: 1200px;
+    color: #D6910C;
+    background: #FFF;
+    border: 1px solid #D6910C;
+    border-radius: 20px;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 35px;
+
+}
+
+.forma h3 { /* TEXTO "SALGADOS" */
+    font-family: 'Maitree', serif;
+    margin-top: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #4d5154;
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu-praca1 {
+    font-family: 'Maitree', serif;
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+/* COXINHA */
+.bordaItem1 {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    display:block;
+}
+
+.item1 img {
+    width: 170px;
+    height: 140px;
+    margin-top: -70px;
+    margin-left: 10px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item1 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: right;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item1 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 45px;
+    color: #000;
+}
+
+.item1 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: -20px;
+    margin-right: 25px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item1 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 30px;
+
+}
+
+.item1 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* HAMBURGÃO */
+.bordaItem2 {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    display:block;
+}
+
+.item2 img {
+    width: 190px;
+    height: 130px;
+    margin-top: -40px;
+    margin-left: 10px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item2 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item2 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 55px;
+    color: #000;
+}
+
+.item2 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+
+}
+.item2 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -110px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item2 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* ESFIHA FECHADA DE CARNE */
+.bordaItem3 {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    display:block;
+}
+
+.item3 img {
+    width: 210px;
+    height: 170px;
+    margin-top: -75px;
+    margin-left: 10px;
+    display: block;
+    border-radius: 20px;
+}
+
+.item3 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item3 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+    margin-right: 48px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item3 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    color: #000;
+}
+
+.item3 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+
+}
+.item3 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -105px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item3 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* PÃO DE QUEIJO */
+.bordaItem4 {
+    width: 400px;
+    height: 200px;
+    margin-top: -643px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    float:right;
+
+}
+
+.item4 img {
+    width: 230px;
+    height: 160px;
+    margin-top: -70px;
+    margin-left: 1px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item4 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item4 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 55px;
+    color: #000;
+}
+
+.item4 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+
+}
+.item4 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item4 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* CROSSAINT */
+.bordaItem5 {
+    width: 400px;
+    height: 200px;
+    margin-top: -423px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    float:right;
+
+}
+
+.item5 img {
+    width: 200px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: 15px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item5 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item5 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    color: #000;
+}
+
+.item5 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+
+}
+.item5 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item5 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* EMPADA DE FRANGO */
+.bordaItem6 {
+    width: 400px;
+    height: 200px;
+    margin-top: -203px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    float:right;
+
+}
+
+.item6 img {
+    width: 200px;
+    height: 140px;
+    margin-top: -50px;
+    margin-left: 20px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item6 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item6 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: right;
+    margin-right: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item6 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    color: #000;
+}
+
+.item6 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+
+}
+.item6 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item6 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* CAFÉ EXPRESSO */
+.bordaItem7 {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    display:block;
+}
+
+.item7 img {
+    width: 200px;
+    height: 140px;
+    margin-top: -60px;
+    margin-left: 10px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item7 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item7 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 55px;
+    color: #000;
+}
+
+.item7 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+
+}
+.item7 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item7 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* REFRIGERANTE EM LATA */
+.bordaItem8 {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    display:block;
+}
+
+.item8 img {
+    width: 210px;
+    height: 150px;
+    margin-top: -70px;
+    margin-left: 15px;
+    display: block;
+    border-radius: 20px;
+}
+
+.item8 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item8 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item8 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    color: #000;
+}
+
+.item8 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+
+}
+.item8 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item8 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+/* SUCO NATURAL */
+.bordaItem9 {
+    width: 400px;
+    height: 200px;
+    margin-top: -420px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    float:right;
+
+}
+
+.item9 img {
+    width: 190px;
+    height: 160px;
+    margin-top: -70px;
+    margin-left: 25px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item9 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 45px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item9 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: right;
+    margin-right: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item9 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    color: #000;
+}
+
+.item9 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+
+}
+.item9 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item9 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+/* AGUA MINERAL */
+.bordaItem10 {
+    width: 400px;
+    height: 200px;
+    margin-top: -198px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    float:right;
+
+}
+
+.item10 img {
+    width: 130px;
+    height: 190px;
+    margin-top: -85px;
+    margin-left: 60px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item10 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 19px;
+    margin-top: 15px;
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item10 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-top: 5px;
+    text-align: right;
+    margin-right: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item10 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    color: #000;
+}
+
+.item10 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+
+}
+.item10 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item10 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+
+}
+/* PUDIM DE LEITE */
+.bordaItem11 {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    display:block;
+}
+
+.item11 img {
+    width: 240px;
+    height: 180px;
+    margin-top: -80px;
+    margin-left: 15px;
+    display: block;
+    border-radius: 20px;
+}
+
+.item11 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item11 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item11 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    color: #000;
+}
+
+.item11 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+
+}
+.item11 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item11 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+/* BOLO DE CHOCOLATE */
+.bordaItem12 {
+    width: 400px;
+    height: 200px;
+    margin-top: -200px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #D6910C;
+    float:right;
+}
+
+.item12 img {
+    width: 200px;
+    height: 150px;
+    margin-top: -70px;
+    margin-left: 20px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.item12 h2 { /* TITULO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 55px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item12 p {
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item12 h3 { /* PREÇO DO ITEM */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    color: #000;
+}
+
+.item12 input { /* SELETOR DE QUANTIDADE */
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+
+}
+.item12 button { /* BOTÃO ADICIONAR */
+    font-family: 'Maitree', serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-right: -108px;
+    color: #000;
+    background-color: #D6910C;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px 5px 7px 5px;
+    float: right;
+    border-radius: 30px;
+    width: 115px;
+    transition: background-color .5s;
+}
+
+.item12 button:hover {
+    background-color: #FFF;
+    color: #D6910C;
+}
+
+.sacola { /* FORMATO AO REDOR DO TEXTO */ 
+    width: 1200px;
+    height: 50px;
+    margin-top: -20px;
+    margin-bottom: 35px;
+    background-image: linear-gradient(to right, #f5ce62, #d6910c, #e85a19);
+    border-radius: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1px;
+}
+
+.sacola a, li { /* TEXTO DA SACOLA */
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: -370px;
+    list-style-type: none;
+
+} 
+
+.sacola a:hover {
+    color: #000;
+}
+
+.sacola img {
+    width: 40px;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+/* INICIO DAS SETAS DA SACOLA */
+#seta1 {
+    float: left;
+    margin-left: 70px;
+}
+
+#seta2 {
+    float: left;
+    margin-left: 80px;
+}
+
+#seta3 {
+    float: left;
+    margin-left: 90px;
+}
+
+#seta4 {
+    float: right;
+    margin-right: 70px;
+    margin-top: -30px;
+}
+
+#seta5 {
+    float: right;
+    margin-right: 80px;
+    margin-top: -30px;
+}
+
+#seta6 {
+    float: right;
+    margin-right: 90px;
+    margin-top: -30px;
+}
+
+
+.inner_content {
+    display:inline-block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+/* RODAPÉ */
+footer {
+    background: #454646 none repeat scroll 0 0;
+    padding-bottom: 42px;
+}
+footer h4 {
+    font-family: 'Maitree', serif;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+/* INFORMAÇOES BASICAS */
+.basic_info, .contact_us, .subscribe {
+    margin-top: 38px;
+    overflow: hidden;
+}
+.footer_logo {
+    margin-left: 10px;
+    width: 190px;
+}
+.social {
+    margin-top: 25px;
+}
+.social > li {
+    padding: 0 8px;
+}
+.social .fa {
+    background: #4d5154;
+    border-radius: 100%;
+    color: #bec5cd;
+    display: block;
+    font-size: 20px;
+    height: 45px;
+    padding-top: 13px;
+    text-align: center;
+    width: 45px;
+}
+.social .fa:hover,.social .fa:focus {
+    background: #616976;
+}
+.footer-copyright {
+    margin: 35px 0 45px;
+    font-size: 13px;
+    color:#fff;
+}
+.footer-copyright a{
+    font-weight: 700;
+    font-size: 15px;
+    color:#fff;
+    padding:0px 5px;
+}
+/* CONTATO E SE INSCREVA */
+.contact_us > a, .subscribe p {
+    color: #85898d;
+    display: block;
+    line-height: 24px;
+    margin: 16px 0;
+}
+.contact_us a:hover,.contact_us a:focus {
+    text-decoration:underline;
+}
+address,.subscribe > p {
+    color: #85898d;
+    line-height: 24px;
+}
+.send_btn {
+    padding: 10px 13px;
+    background: #646667;
+    color:#fff;
+    
+}
+.subscribe > p {
+    margin-bottom: 14px;
+    width: 250px;
+}
+.form-control {
+    background-color: #454646;
+    border: 2px solid #646667;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #c8c8c8;
+    height: 42px;
+}
+.form-control:focus {
+    border: 2px solid #66afe9;
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-control,.form-control::-moz-placeholder{
+    color: #c8c8c8;
+}
+.form-control::-webkit-input-placeholder{
+    color: #c8c8c8;
+}
+.form-control:-ms-input-placeholder{
+    color: #c8c8c8;
+}
+
+
+/* scrollup */
+
+.scrollup{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.scrollup:hover {
+    background: #D6910C;
+    opacity: 1;
+}
+
+.scrollup i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none;
+
+}
+
+
+
+/* REDIMENSIONA OS ELEMENTOS PARA DIFERENTES TAMANHOS DE TELAS */
+@media (max-width: 1199px) {
+    .attr-nav {
+        margin-right: 0;
+    }
+
+    .inner_banner {
+        margin-left: 100px;
+    }
+
+    .info_btn_shadow {
+        margin-top: 45px;
+        width: 144px;
+    }
+    .info_btn {
+        padding: 6px 15px;
+    }
+
+    #bannerInferior > h2 {
+        font-size: 34px;
+        letter-spacing: 0;
+    }
+
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 30px;
+    }
+    .banner {
+        margin-top: 80px;
+    }
+    .inner_banner {
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+    .feature,.signature{
+        height: 300px;
+    }
+    .shack_burger > h2 {
+        margin-bottom: 15px;
+    }
+    .shack_burger > p {
+        margin-left: 20px;
+    }
+
+    .shape {
+        height: 106px;
+        width: 106px;
+    }
+    .shape:after {
+        border-bottom: 15px solid transparent;
+        border-left: 53px solid #c72937;
+        border-right: 53px solid #c72937;
+        bottom: -15px;
+    }
+    .shape > p {
+        font-size: 14px;
+    }
+    .signature_content {
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 15px;
+        margin: 45px 0 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img{
+        height: 500px;
+    }
+    #carousel .carousel-caption {
+        bottom: 50px;
+        left: 40px;
+        top: 40px;
+        width: 350px;
+    }
+    #carousel .carousel-caption > h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    #carousel .carousel-caption > h3 {
+        font-size: 30px;
+    }
+    #carousel .carousel-caption > .info_btn_shadow {
+        margin-top: 30px;
+    }
+    #carousel .carousel-caption > p {
+        margin-right: 20px;
+    }
+
+    .inner_content {
+        width: 200px;
+    }
+    .forth_sec .flaticon {
+        margin-right: 15px;
+        ;
+    }
+
+    #bannerInferior > h2 {
+        font-size: 26px;
+    }
+
+    address ,.subscribe > p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 20px;
+    }
+
+
+}
+
+@media (max-width: 767px) { /* REDIMENSIONA OS ELEMENTOS PARA DIFERENTES TAMANHOS DE TELAS */
+    h1 {
+        font-size: 50px;
+    }
+    .logo {
+        width: 120px;
+    }
+    .banner {
+        margin-top: 60px;
+    }
+    .banner > h3 {
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
+    .inner_banner {
+        margin: 30px 0 0;
+        text-align: center;
+    }
+    .banner_content {
+        display: inline-block;
+        float: none;
+        margin-right: 15px;
+        padding: 0;
+        text-align: left;
+        width: 60%;
+    }
+
+    #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img{
+        height: 400px;
+    }
+    #carousel .carousel-caption {
+        left: 20px;
+        top: 20px;
+        width: 365px;
+        padding: 10px 15px;
+    }
+    #carousel .carousel-caption > p {
+        margin-right: 0;
+    }
+    #carousel .carousel-caption > p,#carousel .carousel-caption > .info_btn_shadow {
+        margin-top: 20px;
+    }
+
+    #bannerInferior {
+        padding: 50px 40px 40px;
+        line-height: 24px;
+    }
+
+}
+
+@media (max-width: 479px) { /* REDIMENSIONA O CONTEUDO PARA SE ADAPTAR A DIFERENTES TAMANHOS DE TELAS */
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .banner {
+        margin-top: 40px;
+    }
+    .banner > h3 {
+        font-size: 20px;
+        letter-spacing: 8px;
+    }
+    .banner_content {
+        width: 50%;
+    }
+    header .caption {
+        margin-left: 15px;
+    }
+
+    #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img{
+        height: 350px;
+    }
+    #carousel .carousel-caption {
+        width: 250px;
+        right: 20px;
+    }
+    #carousel .carousel-caption > h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #carousel .carousel-caption > h3 {
+        font-size: 22px;
+    }
+    #carousel .carousel-caption > p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 15px 0 0;
+    }
+
+    #bannerInferior > h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+}
+

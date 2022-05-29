@@ -1,0 +1,146 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/04/2022, 15:23:25
+    Author     : jojoj
+*/
+
+
+
+.btnn{ /*todos os botões da página*/
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 176px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+
+}
+
+.btn-home{/*botão de retornar a página inicial*/
+    margin: 15px ;
+    background-color: #d6910c;
+    border: 1px solid #fff;    
+    display: inline-block;
+    transition: background-color .5s;
+    width: 10%;
+    /*centralizar o texto no botão:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-home:hover {/*botão ao passar o mouse em cima do botão voltar*/
+    background-color: #fff;
+    border: 1px solid #d6910c;
+    color: #d6910c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.meus-pedidos{ 
+    text-align: center;
+
+}
+
+.titulo-pedido{  
+    color: #d6910c;
+    line-height: 3.0;
+}
+
+
+
+.pedidos img{
+    width: 27px;
+    height: 27px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+details[open]{/*Quando o details esta Aberto*/
+    color:#000;
+    border: 1px solid #d6910c;
+    border-radius: 10px;
+    height: 180px;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;/*margem debaixo*/
+}
+
+details > summary{ /*Número dos Pedidos*/
+    font-size: 25px;
+     font-family: 'Luckiest Guy', cursive;
+    cursor:pointer; 
+    color: #d6910c;
+    line-height: 2.0;
+    border: 2px solid #d6910c;
+    border-radius: 10px;
+    height: 51px;
+    width: 400px;
+    text-align:center;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+
+details>p{ /*Paragráfos e Textos*/
+
+    color: #000;   
+    text-align: center;
+
+}
+
+/*summary::-webkit-details-marker {
+
+display: none
+
+}
+
+summary:after {
+
+background: red;
+
+border-radius: 5px;
+
+content: "+";
+
+color: #fff;
+
+float: left;
+
+font-size: 1.5em;
+
+font-weight: bold;
+
+margin: -5px 10px 0 0;
+
+padding: 0;
+
+text-align: center;
+
+width: 20px;
+
+}
+
+details[open] summary:after {
+
+content: "-";
+
+}
+*/

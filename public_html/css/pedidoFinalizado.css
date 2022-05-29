@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/05/2022, 13:55:18
+    Author     : jojoj
+*/
+
+.btnn{ /*todos os botões da página*/
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 176px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+
+}
+
+.btn-pedido{/*botão de retornar a pagina de meus pedidos*/
+
+    background-color: #d6910c;
+    border: 1px solid #fff;    
+    display: flex;
+    transition: background-color .5s;
+    width: 30%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /*centralizar o texto no botão:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-pedido:hover {/*botão ao passar o mouse em cima do botão voltar*/
+    background-color: #fff;
+    border: 1px solid #d6910c;
+    color: #d6910c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.pedido-finaizado img{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+}
+
+.pedido-finaizado h2{
+    color:#000;
+    text-align: center;
+     line-height: 2.0;
+}
+
+.pedido-finaizado h1{
+    color:#d6910c;
+    text-align: center;
+     line-height: 2.0;
+}

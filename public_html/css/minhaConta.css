@@ -1,0 +1,125 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/04/2022, 12:46:49
+    Author     : jojoj
+*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.my-account{ 
+    text-align: center;
+
+}
+
+.title-account{  /*titulo Minha Conta*/
+    color: #d6910c;
+    line-height: 3.0;
+}
+
+.form { /*formulário que contém os dados do usuário*/
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: auto; /*centralizar o form*/
+
+
+}
+.form input { /*caixa de texto dos labels*/
+    height: 60px;
+    width: 100%;
+    border:2px solid #d6910c;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+
+}
+
+.label-input { /*Alinhamento dos labels*/
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    color:#000; /*d6910c*/
+}
+
+
+select.combox{ /*combobox você é:*/
+    background-color: #ecf0f1;
+    display: flex;
+    border-radius: 10%;
+    margin: 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15x 100px;
+    padding: 0 5px;
+    height: 60px;
+    border: 2px solid #d6910c;
+
+
+}
+
+.btnn{ /*todos os botões da página*/
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 176px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+
+}
+
+.btn-account{ /*botão de atualizar os dados*/
+    margin: 15px ;
+    background-color: #d6910c;
+    border: 1px solid #fff;    
+    display: inline-block;
+    transition: background-color .5s;
+    width: 50%;
+
+}
+
+.btn-account:hover{
+    background-color: #fff;
+    border: 1px solid #d6910c;
+    color: #d6910c;
+}
+
+.btn-home{/*botão de retornar a página inicial*/
+    margin: 15px ;
+    background-color: #d6910c;
+    border: 1px solid #fff;    
+    display: inline-block;
+    transition: background-color .5s;
+    width: 10%;
+    /*centralizar o tyexto no botão:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-home:hover {/*botão ao passar o mouse em cima do botão voltar*/
+    background-color: #fff;
+    border: 1px solid #d6910c;
+    color: #d6910c;
+}
+
+
+
+
+
