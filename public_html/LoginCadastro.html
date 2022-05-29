@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login e Cadastro</title>
+        <link rel="stylesheet" href="css/loginCadastro.css">
+        
+    </head>
+    <body>
+       
+        <div class="container">
+           
+            <div class="content first-content">
+                <div class="first-column">
+                      
+                    <h2 class="title title-primary">Bem vindo de volta!</h2>
+                    <p class="description description-primary">Para se manter conectado com a gente</p>
+                    <p class="description description-primary">por favor faça o login com suas informações pessoais</p>
+                    <button onclick="EntrarNaConta" id="signin" class="btn btn-primary" >Entrar</button>
+                    <p></p>
+                    <a href="PaginaInicial.html"><button  class="btn btn-home">Voltar</button></a>
+                </div>  
+                
+                <div class="second-column">
+                    <h2 class="title title-second">Cadastre-se</h2>                
+
+                    <p class="description description-second">Ou entre na sua conta</p>
+                    
+                    <form class="form">
+                        <label class="label-input" for="">
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text" placeholder="Nome" autocomplete="off" autofocus>
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text" placeholder="CPF" autocomplete="off">
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="Email" autocomplete="off">
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha" autocomplete="off">
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Confirmar Senha" autocomplete="off">
+                        </label>
+
+
+                        <select class="combox" >
+                            <option value="">Você é:</option>
+                            <option value="">Estudante</option>
+                            <option value="">Funcionário</option>
+                            <option value="">Convidado</option>
+
+                        </select>
+
+
+                        <button onclick="CadastrarConta" class="btn btn-second">Criar Conta</button>                            
+                    </form>
+                    
+                </div><!-- second column -->
+            </div><!-- first content -->
+
+            
+            <!-- Segunda Parte - Login-->
+
+            <div class="content second-content">
+                <div class="first-column">
+
+                    <h2 class="title title-primary">Bem vindo!</h2>
+                    <p class="description description-primary">Entre com seus dados pessoais</p>
+                    <p class="description description-primary"> e comece sua jornada com a gente!</p>
+                    <button id="signup" class="btn btn-primary">Cadastre-se</button>
+                    <p></p>
+                    <a href="PaginaInicial.html"><button class="btn btn-home">Voltar</button></a>
+
+                </div>
+
+                <div class="second-column">
+                    <h2 class="title title-second">Entre na sua conta</h2>                         
+
+                    <p class="description description-second">Usando o seu CPF</p>
+                    <form class="form">
+
+                        <label class="label-input" for="">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="text" placeholder="CPF" autocomplete="off" >
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha" autocomplete="off">
+                        </label>
+
+                        <a class="password" href="#">Esqueceu a sua senha?</a>
+                        <button class="btn btn-second">Entrar</button>
+                    </form>
+                </div><!-- second column -->
+            </div><!-- second-content -->
+        </div>
+        <script src="js/LoginCadastro.js"></script>
+    </body>
+</html>
