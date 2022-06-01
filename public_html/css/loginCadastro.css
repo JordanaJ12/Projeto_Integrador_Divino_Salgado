@@ -121,6 +121,7 @@ select.combox{
     border: 1px solid #fff;
     display: inline-block;
     transition: background-color .5s;
+    margin-left: 100px;
 }
 .btn-second:hover {/*botão ao passar o mouse em cim do criar conta*/
     background-color: #fff;

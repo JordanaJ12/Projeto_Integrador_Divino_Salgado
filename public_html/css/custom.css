@@ -387,7 +387,7 @@ header .caption {
     height: 190px;
     width: 450px;
     padding: 60px 0 10px; /* NÃO FEZ NADA */
-    border-radius: 15%;
+    border-radius: 20px;
     display: inline-block;
     margin-left: 60px;
     margin-right: 60px;
