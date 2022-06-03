@@ -84,11 +84,13 @@ select.combox{ /*combobox você é:*/
 
 .btn-account{ /*botão de atualizar os dados*/
     margin: 15px ;
+    margin-right: 400px;
     background-color: #d6910c;
-    border: 1px solid #fff;    
+    border: 1px solid #fff;
     display: inline-block;
     transition: background-color .5s;
-    width: 50%;
+    width: 300px;
+        
 
 }
 
@@ -97,6 +99,28 @@ select.combox{ /*combobox você é:*/
     border: 1px solid #d6910c;
     color: #d6910c;
 }
+
+.btn-exitoff{/*botão de sair da conta*/
+    margin-top: -55px;
+    margin-left: 620px;
+    background-color: #d6910c;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: background-color .5s;
+    width: 300px;
+    margin-bottom: 25px;
+    /*centralizar o tyexto no botão:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-exitoff:hover {/*botão ao passar o mouse em cima do botão voltar*/
+    background-color: #fff;
+    border: 1px solid #d6910c;
+    color: #d6910c;
+}
+
 
 .btn-home{/*botão de retornar a página inicial*/
     margin: 15px ;
@@ -118,7 +142,6 @@ select.combox{ /*combobox você é:*/
     border: 1px solid #d6910c;
     color: #d6910c;
 }
-
 
 
 

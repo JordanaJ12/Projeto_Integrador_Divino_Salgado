@@ -333,7 +333,7 @@ header .caption {
 }
 #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img{
     height: 600px;
-    border-radius: 10%;
+    border-radius: 20px;
 }
 #carousel .carousel-caption {
     background: rgba(0, 0, 0, 0.35) none repeat scroll 0 0;
