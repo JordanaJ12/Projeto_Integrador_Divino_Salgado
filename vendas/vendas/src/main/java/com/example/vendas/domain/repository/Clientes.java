@@ -17,12 +17,15 @@ public interface Clientes extends JpaRepository<Cliente, Integer> {
     List<Cliente> encontrarPorNome(@Param("nome") String nome); //o spring vai trasnformar esse método em uma query do banco
 
     @Query(value = " select * from Cliente c where c.nome =:nome ", nativeQuery = true)
-   Cliente findByNome(String nome);
+    Cliente findByNome(String nome);
 
     boolean existsByNome(String nome);
 
     @Query(value = " select c from Cliente c join left fetch c.pedidos where c.id =:id ", nativeQuery = true)
     Cliente findClienteFetchPedidos(@Param("id") Integer id); //com o id vamos buscar tanto o cliente que tem o id e junto deles queremos trazer os pedidos da base de dados
 
+    @Query(value = " select * from cliente where cpf = ?1 and senha= ?2 ", nativeQuery = true)
+//estamos dizendo que a query fará a consulta do nome na tabela cliente em sql nativo
+    Cliente encontrarPorCpfSenha( String cpf,  String senha); //o spring vai trasnformar esse método em uma query do banco
 
 }

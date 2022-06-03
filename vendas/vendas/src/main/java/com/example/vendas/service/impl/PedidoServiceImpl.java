@@ -45,7 +45,7 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setTotal(dto.getTotal()); //populamos o total
         pedido.setDataPedido(LocalDate.now()); //data do pedido que é agora
         pedido.setCliente(cliente);
-        pedido.setStatus(StatusPedido.REALIZADO ); //quando eu realizar um pedido ele automaticamente será realizado
+        pedido.setStatus(StatusPedido.PREPARACAO); //quando eu realizar um pedido ele automaticamente será realizado
 
         List<ItemPedido> itemsPedido = converterItens(pedido, dto.getItems());
         repository.save(pedido); //aqui sim estamos salvando o pedido e obtendo a referencia do id no banco
@@ -73,7 +73,7 @@ public class PedidoServiceImpl implements PedidoService {
 
     private List<ItemPedido> converterItens(Pedido pedido, List<ItemPedidoDTO> itens) { //vai transformar o item em item de pedido
         if (itens.isEmpty()) { //verificando se a lista está vazia
-        throw  new RegraNegocioException("Não é possível realizar pedido sem itens.");
+            throw  new RegraNegocioException("Não é possível realizar pedido sem itens.");
 
         }
         return itens
@@ -87,12 +87,12 @@ public class PedidoServiceImpl implements PedidoService {
                                             "Código de produto inválido." + idProduto
                                     )); //passando qual código foi enviado que não existe o produto cadastrado no banco
 
-            ItemPedido itemPedido = new ItemPedido();
-            itemPedido.setQuantidade(dto.getQuantidade());
-            itemPedido.setPedido(pedido); // de qual pedido é esse item, passando a referência do pedido que ainda não foi salvo
+                    ItemPedido itemPedido = new ItemPedido();
+                    itemPedido.setQuantidade(dto.getQuantidade());
+                    itemPedido.setPedido(pedido); // de qual pedido é esse item, passando a referência do pedido que ainda não foi salvo
                     itemPedido.setProduto(produto);
                     return itemPedido;
 
-        }).collect(Collectors.toList()); //trasnforma a outra stream em uma lista  de item pedido
+                }).collect(Collectors.toList()); //trasnforma a outra stream em uma lista  de item pedido
     }
 }

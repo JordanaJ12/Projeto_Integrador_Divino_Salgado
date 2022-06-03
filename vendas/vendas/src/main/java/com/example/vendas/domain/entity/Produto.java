@@ -16,7 +16,7 @@ public class Produto {
 
 
     @Id //usamos para identificador da chave primaria que no nosso caso é o id segundo o meu_schema
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id") //não precisa mas colocamos para deixar bem definido
     private Integer id;
 
@@ -24,8 +24,8 @@ public class Produto {
     @NotEmpty(message = "{campo.descricao.obrigatorio}") // notEmpty faz sentido em string pois pode ser vazia ou nula
     private String descricao;
 
-    @Column(name = "{campo.preco.obrigatorio}")
-    @NotNull(message = "{}") //não existe preço vazio ou é 0 ou nulo
+    @Column(name = "{preco_unitario}")
+    @NotNull(message = "{campo.preco.obrigatorio}") //não existe preço vazio ou é 0 ou nulo
     private BigDecimal preco;
 
 }

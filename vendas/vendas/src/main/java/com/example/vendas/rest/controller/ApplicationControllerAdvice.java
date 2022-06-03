@@ -11,14 +11,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//@CrossOrigin(origins = "http://localhost:8383")
+
 @RestControllerAdvice
 public class ApplicationControllerAdvice {
 
     @ExceptionHandler(RegraNegocioException.class) //vai marcar o metodo abaixo pra ser o tratador de erro de exception que passamos no parametro
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ApiErrors handleRegraNegocioException(RegraNegocioException ex){ //vai lidar com a regra de negocio exception
-    String mensagemErro = ex.getMessage();
-    return new ApiErrors(mensagemErro);
+        String mensagemErro = ex.getMessage();
+        return new ApiErrors(mensagemErro);
     }
 
     @ExceptionHandler(PedidoNaoEncontradoException.class)
@@ -31,11 +33,11 @@ public class ApplicationControllerAdvice {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ApiErrors handleMethodNotValidException(MethodArgumentNotValidException ex){ //exception quando alguém tenta mandar um objeto que não é valido: nullo, vazio, e etc
-    List<String> errors = ex.getBindingResult().getAllErrors() //esse objeto carrega as mensagens de validação e vê o que falhou
-            .stream()
-            .map(erro -> erro.getDefaultMessage() )
-            .collect(Collectors.toList());
-    return new ApiErrors(errors);
+        List<String> errors = ex.getBindingResult().getAllErrors() //esse objeto carrega as mensagens de validação e vê o que falhou
+                .stream()
+                .map(erro -> erro.getDefaultMessage() )
+                .collect(Collectors.toList());
+        return new ApiErrors(errors);
     }
 
 }

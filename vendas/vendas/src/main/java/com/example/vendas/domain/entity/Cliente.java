@@ -10,7 +10,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.util.Set;
 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,7 +18,7 @@ import java.util.Set;
 public class Cliente {
 
     @Id //define qual a primmary key da entidade
-    @GeneratedValue(strategy = GenerationType.AUTO) //representa o auto incremento
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //representa o auto incremento, O IDENTIFY quer dizer que o mysql que vai criar
     @Column(name = "id")
     private Integer id;
 
@@ -32,6 +31,19 @@ public class Cliente {
     @CPF(message = "{campo.cpf.invalido}")
     private String cpf;
 
+    @Column( name = "email", length = 100)
+    @NotEmpty(message = "{campo.email.obrigatorio}")
+    private String email;
+
+    @Column( name = "senha", length = 100)
+    @NotEmpty(message = "{campo.senha.obrigatorio}")
+    private String senha;
+
+    @Column( name = "tipo_cliente", length = 15)
+    @NotEmpty(message = "{campo.tipo_cliente.obrigatorio}")
+    private String tipo_cliente;
+
+
     @JsonIgnore
     //ela vai dizer para o transformador de objetos em Json que deve ignorar totalmente essa propriedade que no caso é ignorar os pedidos, vai mostrar apenas id e nome
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
@@ -39,9 +51,13 @@ public class Cliente {
     private Set<Pedido> pedidos;
 
 
-    public Cliente(Integer id, String nome, String cpf){
+    public Cliente(Integer id, String nome, String cpf, String email, String senha, String tipo_cliente){
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+        this.tipo_cliente = tipo_cliente;
     }
 }
+

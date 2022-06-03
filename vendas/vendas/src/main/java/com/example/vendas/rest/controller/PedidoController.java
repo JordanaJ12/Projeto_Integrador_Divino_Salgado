@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 
 import static org.springframework.http.HttpStatus.*;
 
+@CrossOrigin(origins = "http://localhost:8383")
 
 @RestController
 @RequestMapping("/api/pedidos")
@@ -64,16 +65,16 @@ public class PedidoController {
 
 
     private InformacoesPedidoDTO converter(Pedido pedido){
-    return InformacoesPedidoDTO
-            .builder()
-            .codigo(pedido.getId())
-            .dataPedido(pedido.getDataPedido().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")))
-            .cpf(pedido.getCliente().getCpf())
-            .nomeCliente(pedido.getCliente().getNome())
-            .total(pedido.getTotal())
-            .status(pedido.getStatus().name()) // o metodo name pega o valor REALIZADO OU CANCELADO e transforma em String
-            .items(converter(pedido.getItens()))
-                    .build();
+        return InformacoesPedidoDTO
+                .builder()
+                .codigo(pedido.getId())
+                .dataPedido(pedido.getDataPedido().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")))
+                .cpf(pedido.getCliente().getCpf())
+                .nomeCliente(pedido.getCliente().getNome())
+                .total(pedido.getTotal())
+                .status(pedido.getStatus().name()) // o metodo name pega o valor REALIZADO OU CANCELADO e transforma em String
+                .items(converter(pedido.getItens()))
+                .build();
     }
 
     private  List<InformacaoItemPedidoDTO> converter(List<ItemPedido> itens){
