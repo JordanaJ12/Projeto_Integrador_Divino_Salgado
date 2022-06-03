@@ -6,71 +6,70 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Login e Cadastro</title>
         <link rel="stylesheet" href="css/loginCadastro.css">
-        
+
     </head>
     <body>
-       
+
         <div class="container">
-           
+
             <div class="content first-content">
                 <div class="first-column">
-                      
+
                     <h2 class="title title-primary">Bem vindo de volta!</h2>
                     <p class="description description-primary">Para se manter conectado com a gente</p>
                     <p class="description description-primary">por favor faça o login com suas informações pessoais</p>
-                    <button onclick="EntrarNaConta" id="signin" class="btn btn-primary" >Entrar</button>
+                    <button  onclick="Entrar()" id="signin" class="btn btn-primary" >Entrar</button>
                     <p></p>
                     <a href="PaginaInicial.html"><button  class="btn btn-home">Voltar</button></a>
                 </div>  
-                
+
                 <div class="second-column">
                     <h2 class="title title-second">Cadastre-se</h2>                
 
                     <p class="description description-second">Ou entre na sua conta</p>
-                    
+
                     <form class="form">
                         <label class="label-input" for="">
                             <i class="far fa-user icon-modify"></i>
-                            <input type="text" placeholder="Nome" autocomplete="off" autofocus>
+                            <input id="nome" type="text" placeholder="Nome" autocomplete="off" autofocus>
                         </label>
 
                         <label class="label-input" for="">
                             <i class="far fa-user icon-modify"></i>
-                            <input type="text" placeholder="CPF" autocomplete="off">
+                            <input id="cpf" type="text" placeholder="CPF" autocomplete="off">
                         </label>
 
                         <label class="label-input" for="">
                             <i class="far fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="Email" autocomplete="off">
+                            <input id="email" type="email" placeholder="Email" autocomplete="off">
                         </label>
 
                         <label class="label-input" for="">
                             <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha" autocomplete="off">
+                            <input id="senha" type="password" placeholder="Senha" autocomplete="off">
                         </label>
 
                         <label class="label-input" for="">
                             <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Confirmar Senha" autocomplete="off">
+                            <input id="confirmarSenha" type="password" placeholder="Confirmar Senha" autocomplete="off">
                         </label>
 
-
-                        <select class="combox" >
+                        <select id="tipoCliente" class="combox" >
                             <option value="">Você é:</option>
-                            <option value="">Estudante</option>
-                            <option value="">Funcionário</option>
-                            <option value="">Convidado</option>
+                            <option value="estudante">Estudante</option>
+                            <option value="funcionário">Funcionário</option>
+                            <option value="convidado">Convidado</option>
 
                         </select>
 
 
-                        <button onclick="CadastrarConta" class="btn btn-second">Criar Conta</button>                            
+                        <button onclick="CadastrarConta()" class="btn btn-second">Criar Conta</button>                          
                     </form>
-                    
+
                 </div><!-- second column -->
             </div><!-- first content -->
 
-            
+
             <!-- Segunda Parte - Login-->
 
             <div class="content second-content">
@@ -79,8 +78,9 @@
                     <h2 class="title title-primary">Bem vindo!</h2>
                     <p class="description description-primary">Entre com seus dados pessoais</p>
                     <p class="description description-primary"> e comece sua jornada com a gente!</p>
-                    <button id="signup" class="btn btn-primary">Cadastre-se</button>
+                    <button id="signup" onclick="Cadastrar()" class="btn btn-primary">Cadastre-se</button>
                     <p></p>
+
                     <a href="PaginaInicial.html"><button class="btn btn-home">Voltar</button></a>
 
                 </div>
@@ -93,17 +93,19 @@
 
                         <label class="label-input" for="">
                             <i class="far fa-envelope icon-modify"></i>
-                            <input type="text" placeholder="CPF" autocomplete="off" >
+                            <input type="text" name="cpfCliente" id="cpfClienteId" placeholder="CPF" autocomplete="off" >
                         </label>
 
                         <label class="label-input" for="">
                             <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha" autocomplete="off">
+                            <input type="password" id="senhaClienteId" placeholder="Senha" autocomplete="off">
                         </label>
 
                         <a class="password" href="#">Esqueceu a sua senha?</a>
-                        <button class="btn btn-second">Entrar</button>
+
                     </form>
+                    <button onclick="logadoNaConta()" class="btn btn-third">Entrar</button>
+
                 </div><!-- second column -->
             </div><!-- second-content -->
         </div>

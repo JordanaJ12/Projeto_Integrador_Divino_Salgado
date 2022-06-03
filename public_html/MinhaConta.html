@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/flaticon.css" />
-        
-         <link rel="stylesheet" href="css/minhaConta.css" />
+
+        <link rel="stylesheet" href="css/minhaConta.css" />
 
         <!-- Animate -->
         <link rel="stylesheet" href="css/animate.css">
@@ -26,7 +26,7 @@
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
+    <body  data-spy="scroll" data-target="#navbar-menu" data-offset="100">
 
         <!-- TELA DE CARREGAMENTO --> 
         <div id="loading">
@@ -69,159 +69,154 @@
         <!-- MANTEM AS SEÇÕES CENTRALIZADAS (NAO MEXER)  -->
         <section id="block">
             <div class="container">   
-                <a href="PaginaInicial.html"><button class="btnn btn-home">Voltar</button></a>                
-                                                                           
-                        <div class="my-account">
+                <a href="PaginaInicial.html"><button class="btnn btn-home">Voltar</button></a> 
+
+
+
+                <div class="my-account">
                     <h2 class="title title-account">Minha Conta</h2>    
-                   
+
                     <form class="form">
-                        <label class="label-input" for="">
-                            
-                            <input type="text" placeholder="Nome" autocomplete="off">
+                        <label class="label-input" >
+
+                            <input id="nome" type="text" placeholder="Nome" autocomplete="off">
                         </label>
 
-                        <label class="label-input" for="">
-                           
-                            <input type="text" placeholder="CPF" autocomplete="off">
+                        <label class="label-input" >
+
+                            <input id="cpf" type="text" placeholder="CPF" autocomplete="off">
                         </label>
 
-                        <label class="label-input" for="">
-                           
-                            <input type="email" placeholder="Email" autocomplete="off">
+                        <label class="label-input" >
+
+                            <input id="email" type="email" placeholder="Email" autocomplete="off">
                         </label>
 
-                        <label class="label-input" for="">
-                            
-                            <input type="password" placeholder="Senha" autocomplete="off">
+                        <label class="label-input" >
+
+                            <input id="senha" type="password" placeholder="Senha" autocomplete="off">
                         </label>
 
-                        <label class="label-input" for="">
-                           
-                            <input type="password" placeholder="Confirmar Senha" autocomplete="off">
+                        <label class="label-input" >
+
+                            <input id="confirmarSenha" type="password" placeholder="Confirmar Senha" autocomplete="off">
                         </label>
 
 
-                        <select class="combox" >
-                            <option value="">Você é:</option>
-                            <option value="">Estudante</option>
-                            <option value="">Funcionário</option>
-                            <option value="">Convidado</option>
+                        <label class="label-input">
 
-                        </select>
+                            <input id="tipoCliente" type="text" placeholder="Tipo do Cliente" autocomplete="off">
+                        </label>
 
 
-                        <button class="btnn btn-account">Atualizar Conta</button>                            
+
                     </form>
-                        
-                        
-                        
-                 
-                    
-                    
-                    
-
-              
-                    
-                    
-                    
-
-        </section><!-- FINAL DO CENTRALIZAR DO SITE -->
-
-        <!-- BANNER INFERIOR -->
-      
 
 
-        <!-- RODAPÉ -->
-        <footer>
 
-            <div id="rodape">
 
-                <img src="img/Rodape.png" alt="">
 
-            </div>
-            <!-- Container -->
-            <div class="container">
 
-                <div class="row">
+                    <button  onclick="atualizarConta()" class="btnn btn-account">Atualizar Conta</button> 
+                    <button onclick="logoff()" class="btnn btn-exitoff">Sair da Conta</button>
 
-                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
-                        <div class="subscribe">
-                            <h4>Inscreva-se</h4>
-                            <p>Para receber novidades e promoções, digite o seu email!</p>
+                    </section><!-- FINAL DO CENTRALIZAR DO SITE -->
 
-                            <form role="form">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" id="em" placeholder="Escreva o seu email aqui">
-                                        <span class="input-group-btn">
-                                            <button type="submit" class="btn send_btn">
-                                                <i class="glyphicon glyphicon-send"></i>
-                                            </button>
-                                        </span>
+                    <!-- BANNER INFERIOR -->
+
+
+
+                    <!-- RODAPÉ -->
+                    <footer>
+
+                        <div id="rodape">
+
+                            <img src="img/Rodape.png" alt="">
+
+                        </div>
+                        <!-- Container -->
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+                                    <div class="subscribe">
+                                        <h4>Inscreva-se</h4>
+                                        <p>Para receber novidades e promoções, digite o seu email!</p>
+
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="email" class="form-control" id="em" placeholder="Escreva o seu email aqui">
+                                                    <span class="input-group-btn">
+                                                        <button type="submit" class="btn send_btn">
+                                                            <i class="glyphicon glyphicon-send"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </form>
+
                                     </div>
                                 </div>
-                            </form>
 
-                        </div>
-                    </div>
+                                <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+                                    <div class="contact_us">
+                                        <h4>Contate-nos</h4>
+                                        <a href="">divinosalgado@senacsp.com</a>
 
-                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
-                        <div class="contact_us">
-                            <h4>Contate-nos</h4>
-                            <a href="">divinosalgado@senacsp.com</a>
+                                        <address>
+                                            Av. Engenheiro Stevaux<br />
+                                            823 - Jurubatuba <br />
+                                            Santo Amaro / SP <br />
+                                        </address>
+                                    </div>
+                                </div>
 
-                            <address>
-                                Av. Engenheiro Stevaux<br />
-                                823 - Jurubatuba <br />
-                                Santo Amaro / SP <br />
-                            </address>
-                        </div>
-                    </div>
+                                <div class="col-lg-4 col-sm-4 col-xs-12 pull-right">
+                                    <div class="basic_info">
+                                        <a href=""><img class="footer_logo" src="images/logo rodape copiar.png" alt="Burger" /></a>
 
-                    <div class="col-lg-4 col-sm-4 col-xs-12 pull-right">
-                        <div class="basic_info">
-                            <a href=""><img class="footer_logo" src="images/logo rodape copiar.png" alt="Burger" /></a>
+                                        <ul class="list-inline social">
+                                            <li><a href="" class="fa fa-facebook"></a></li>
+                                            <li><a href="" class="fa fa-twitter"></a></li>
+                                            <li><a href="" class="fa fa-instagram"></a></li>
+                                        </ul>
 
-                            <ul class="list-inline social">
-                                <li><a href="" class="fa fa-facebook"></a></li>
-                                <li><a href="" class="fa fa-twitter"></a></li>
-                                <li><a href="" class="fa fa-instagram"></a></li>
-                            </ul>
+                                        <div class="footer-copyright">
+                                            <p class="wow fadeInRight" data-wow-duration="1s">
+                                                Desenvolvido pelo TADS/2022. 
+                                                <i class="fa fa-heart"></i>
 
-                            <div class="footer-copyright">
-                                <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Desenvolvido pelo TADS/2022. 
-                                    <i class="fa fa-heart"></i>
+                                            </p>
+                                        </div>					
+                                    </div>
+                                </div>
 
-                                </p>
-                            </div>					
-                        </div>
-                    </div>
-
-                </div>
-            </div><!-- Container end -->
-        </footer><!-- Footer end -->
+                            </div>
+                        </div><!-- Container end -->
+                    </footer><!-- Footer end -->
 
 
-        <!-- scroll up-->
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
-        </div><!-- End off scroll up->
-        
-        <!-- JavaScript -->
-        <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>		
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!-- Bootsnav js -->
-        <script src="js/bootsnav.js"></script>
-
-   
-
-        
-
-  
+                    <!-- scroll up-->
+                    <div class="scrollup">
+                        <a href="#"><i class="fa fa-chevron-up"></i></a>
+                    </div><!-- End off scroll up->
+                    
+                    <!-- JavaScript -->
+                    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>		
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                    <!-- Bootsnav js -->
+                    <script src="js/bootsnav.js"></script>
 
 
-        <!--main js-->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>	
-</html>	
+
+
+
+
+
+
+                    <!--main js-->
+                    <script type="text/javascript" src="js/minhaConta.js"></script>
+                    </body>	
+                    </html>	
