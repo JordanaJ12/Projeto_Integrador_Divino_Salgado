@@ -90,7 +90,7 @@ select.combox{
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 176px;
+    width: 190px;
     align-self: center;
     border: none;
     margin-top: 1rem;
@@ -121,9 +121,26 @@ select.combox{
     border: 1px solid #fff;
     display: inline-block;
     transition: background-color .5s;
+    margin-left: 95px;
+    
 }
 .btn-second:hover {/*botão ao passar o mouse em cim do criar conta*/
     background-color: #fff;
+    border: 1px solid #d6910c;
+    color: #d6910c;
+}
+
+.btn-third{
+ background-color: #d6910c;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: background-color .5s;
+    margin-left: 85px;
+    color:#fff;   
+}
+
+.btn-third:hover{
+     background-color: #fff;
     border: 1px solid #d6910c;
     color: #d6910c;
 }
