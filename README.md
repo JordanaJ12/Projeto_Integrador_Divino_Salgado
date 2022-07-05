@@ -9,8 +9,13 @@ Com a aplicação é possivel:
 - 🍿 Acompanhar as promoções e pedidos mais vendidos pela aplicação.
 ##
 
+## Ferramentas
+- 🥓 Utilizamos como principais linguagens de programação para o frontend: HTML, CSS e JavaScript;
+- 🧇 Utilizamos como principais linguagens de programação para o backend: Java, Banco de Dados H2 e SpringBoot;
 
-### Nomes dos Integrantes 👨‍💻 👩‍💻 :
+##
+
+## Nomes dos Desenvolvedores: 👨‍💻 👩‍💻 
 #### - Gustavo Francisco de Sousa Matos;
 
 #### - Jordana Jesus da Conceição;
