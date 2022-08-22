@@ -1,4 +1,4 @@
-## Projeto Integrador: Divino Salgado 
+## Divino Salgado🥪🥤
 Aplicação Web que tem como objetivo diminuir a fila de espera nas compras de salgados no SENAC Santo Amaro, otimizando o tempo de intervalo e trazendo mais praticidade.
 
 Com a aplicação é possivel:
@@ -15,13 +15,15 @@ Com a aplicação é possivel:
 
 ##
 
-## Nomes dos Desenvolvedores: 👨‍💻 👩‍💻 
-#### - Gustavo Francisco de Sousa Matos;
+## Desenvolvedores: 👨‍💻 👩‍💻
+O projeto foi desenvolvido pelos integrantes:
 
-#### - Jordana Jesus da Conceição;
+ - Gustavo Francisco de Sousa Matos;
 
-#### - Kleber Utrilha Branco;
+ - Jordana Jesus da Conceição;
 
-#### - Lucas Alves de Brito.
+ - Kleber Utrilha Branco;
+
+ - Lucas Alves de Brito.
 
 
